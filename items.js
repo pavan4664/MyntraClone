@@ -5,6 +5,8 @@ let items={
         stars:4.5,
         numRew:1400,
     },
+    company_name:'Carlton London',
+    item_name:'Rhodium-plated CZ Floral'
 }
 
 itemCont.innerHTML=` <div class="item-container">
@@ -12,8 +14,8 @@ itemCont.innerHTML=` <div class="item-container">
                 <div class="rating">
                     ${items.rating.stars} ★|${items.rating.numRew}
                 </div>
-                <div class="company-name">Carlton London</div>
-                <div class="item-name">Rhodium-plated CZ Floral </div>
+                <div class="company-name">${items.company_name}</div>
+                <div class="item-name">${items.item_name}</div>
                 <div class="price">
                     <span class="Current-Price">Rs.606<span>
                     <span class="Orignal">Rs.1050</span> 
