@@ -1,19 +1,19 @@
 let itemCont=document.querySelector('.items-container');
 let innerHTML='';
 
-info.forEach(items=>{
+items.forEach(items=>{
     innerHTML+=`
     <div class="item-container">
-                <img class="item-img"src="${items.imag}" alt="item-image">
+                <img class="item-img"src="${items.image}" alt="item-image">
                 <div class="rating">
-                    ${items.rating.stars} ★|${items.rating.numRew}
+                    ${items.rating.stars} ★|${items.rating.count}
                 </div>
                 <div class="company-name">${items.company}</div>
                 <div class="item-name">${items.item_name}</div>
                 <div class="price">
-                    <span class="Current-Price">Rs.${items.Current_Price}<span>
+                    <span class="Current-Price">Rs.${items.current_Price}<span>
                     <span class="Orignal">Rs.${items.Orignal}</span> 
-                    <span class="discount">${items.discount}% OFF</span>
+                    <span class="discount">${items.discount_percentage}% OFF</span>
                 </div>
                 <button class="btn-add-bag">Add to Bag <button>
             </div>`

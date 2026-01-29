@@ -1,7 +1,7 @@
 const items = [
     {
         id: '001',
-        image: 'images/1.jpg',
+        image: '/1.jpg',
         company: 'Carlton London',
         item_name: 'Rhodium-Plated CZ Floral Studs',
         original_price: 1045,
@@ -16,7 +16,7 @@ const items = [
     },
     {
         id: '002',
-        image: 'images/2.jpg',
+        image: '/2.jpg',
         company: 'CUKOO',
         item_name: 'Women Padded Halter Neck Swimming Dress',
         original_price: 2599,
@@ -31,7 +31,7 @@ const items = [
     },
     {
         id: '003',
-        image: 'images/3.jpg',
+        image: '/3.jpg',
         company: 'NUEVOSDAMAS',
         item_name: 'Women Red & White Printed A-Line Knee-Length Skirts',
         original_price: 1599,
