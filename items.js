@@ -6,7 +6,12 @@ let items={
         numRew:1400,
     },
     company_name:'Carlton London',
-    item_name:'Rhodium-plated CZ Floral'
+    item_name:'Rhodium-plated CZ Floral',
+    Current_Price: 606,
+    Orignal:1045,
+    discount:42,
+    
+
 }
 
 itemCont.innerHTML=` <div class="item-container">
@@ -17,9 +22,9 @@ itemCont.innerHTML=` <div class="item-container">
                 <div class="company-name">${items.company_name}</div>
                 <div class="item-name">${items.item_name}</div>
                 <div class="price">
-                    <span class="Current-Price">Rs.606<span>
-                    <span class="Orignal">Rs.1050</span> 
-                    <span class="discount">42% OFF</span>
+                    <span class="Current-Price">Rs.${items.Current_Price}<span>
+                    <span class="Orignal">Rs.${items.Orignal}</span> 
+                    <span class="discount">${items.discount}% OFF</span>
                 </div>
                 <button class="btn-add-bag">Add to Bag <button>
             </div>
