@@ -1,6 +1,27 @@
 let itemCont=document.querySelector('.items-container');
 let innerHTML='';
-i
+
+info.forEach(items=>{
+    innerHTML+=`
+    <div class="item-container">
+                <img class="item-img"src="${items.imag}" alt="item-image">
+                <div class="rating">
+                    ${items.rating.stars} ★|${items.rating.numRew}
+                </div>
+                <div class="company-name">${items.company}</div>
+                <div class="item-name">${items.item_name}</div>
+                <div class="price">
+                    <span class="Current-Price">Rs.${items.Current_Price}<span>
+                    <span class="Orignal">Rs.${items.Orignal}</span> 
+                    <span class="discount">${items.discount}% OFF</span>
+                </div>
+                <button class="btn-add-bag">Add to Bag <button>
+            </div>`
+
+
+
+});
+itemCont.innerHTML=innerHTML;
 // let items={
 //     item_img: '1.jpg',
 //     rating:{
@@ -16,18 +37,3 @@ i
 
 // }
 
-itemCont.innerHTML=` <div class="item-container">
-                <img class="item-img"src="${items.item_img}" alt="item-image">
-                <div class="rating">
-                    ${items.rating.stars} ★|${items.rating.numRew}
-                </div>
-                <div class="company-name">${items.company_name}</div>
-                <div class="item-name">${items.item_name}</div>
-                <div class="price">
-                    <span class="Current-Price">Rs.${items.Current_Price}<span>
-                    <span class="Orignal">Rs.${items.Orignal}</span> 
-                    <span class="discount">${items.discount}% OFF</span>
-                </div>
-                <button class="btn-add-bag">Add to Bag <button>
-            </div>
-`;
