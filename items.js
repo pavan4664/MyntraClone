@@ -1,18 +1,20 @@
 let itemCont=document.querySelector('.items-container');
-let items={
-    item_img: '1.jpg',
-    rating:{
-        stars:4.5,
-        numRew:1400,
-    },
-    company_name:'Carlton London',
-    item_name:'Rhodium-plated CZ Floral',
-    Current_Price: 606,
-    Orignal:1045,
-    discount:42,
+let innerHTML='';
+i
+// let items={
+//     item_img: '1.jpg',
+//     rating:{
+//         stars:4.5,
+//         numRew:1400,
+//     },
+//     company_name:'Carlton London',
+//     item_name:'Rhodium-plated CZ Floral',
+//     Current_Price: 606,
+//     Orignal:1045,
+//     discount:42,
     
 
-}
+// }
 
 itemCont.innerHTML=` <div class="item-container">
                 <img class="item-img"src="${items.item_img}" alt="item-image">
