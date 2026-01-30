@@ -32,7 +32,7 @@ const items = [
     },
     {
         id: '003',
-        image: '/product-info/3.jpg',
+        image: 'product-info/3.jpg',
         company: 'NUEVOSDAMAS',
         item_name: 'Women Red & White Printed A-Line Knee-Length Skirts',
         original_price: 1599,

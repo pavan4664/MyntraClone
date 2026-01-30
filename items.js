@@ -1,9 +1,25 @@
-let itemCont=document.querySelector('.items-container');
-let innerHTML='';
+let bagItems=[];
 
-items.forEach(items=>{
-    innerHTML+=`
-    <div class="item-container">
+displyItems();
+function  addToBag(itmesId)
+{
+    bagItems.push(itmesId );
+} 
+
+
+
+
+
+
+
+
+
+function displyItems(){
+    let itemCont=document.querySelector('.items-container');
+    let innerHTML='';
+    items.forEach(items=>{
+        innerHTML+=`
+        <div class="item-container">
                 <img class="item-img"src="${items.image}" alt="item-image">
                 <div class="rating">
                     ${items.rating.stars} ★|${items.rating.count}
@@ -12,10 +28,10 @@ items.forEach(items=>{
                 <div class="item-name">${items.item_name}</div>
                 <div class="price">
                     <span class="Current-Price">Rs.${items.current_Price}<span>
-                    <span class="Orignal">Rs.${items.Orignal}</span> 
+                    <span class="Orignal">Rs.${items.original_price}</span> 
                     <span class="discount">${items.discount_percentage}% OFF</span>
                 </div>
-                <button class="btn-add-bag">Add to Bag <button>
+                <button class="btn-add-bag" onclick="addTag() ${items.id}">Add to Bag <button>
             </div>`
 
 
@@ -37,3 +53,7 @@ itemCont.innerHTML=innerHTML;
 
 // }
 
+
+
+
+}
