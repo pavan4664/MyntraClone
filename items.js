@@ -3,6 +3,7 @@ let bagItems = [];
 onLoad();
 
 function onLoad(){
+  let bag
   displayItems();
   displyaIcon();
 
@@ -14,7 +15,9 @@ function onLoad(){
 function addToBag(itemId) {
   bagItems.push(itemId);
   console.log("Bag items:", bagItems);
+  localStorage.setItem('bagItems',JSON.stringify(bagItems));
   displyaIcon();
+
 }
 function displyaIcon(){
 
