@@ -1,8 +1,10 @@
 
-let bagItems = [];
+let bagItems;
 onLoad();
 
 function onLoad(){
+  let bagItemsStr=localStorage.getItem('bagItems');
+  bagItems=bagItemsStr ? JSON.parse(bagItemsStr): [];
   let bag
   displayItems();
   displyaIcon();
