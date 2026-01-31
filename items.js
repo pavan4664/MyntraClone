@@ -33,9 +33,14 @@ function displyaIcon(){
   }
 }
 
+
+
 function displayItems() {
   const itemCont = document.querySelector('.items-container');
   let innerHTML = '';
+  if(!itemCont){
+    return;
+  }
 
   items.forEach(item => {
     innerHTML += `
